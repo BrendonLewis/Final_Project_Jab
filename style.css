@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Original+Surfer&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: aliceblue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.innerBody {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+}
+
+.header {
+    overflow: hidden;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    background-color: #191516;
+}
+
+.header .innerHeader:nth-child(1) {
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAD8D6;
+}
+
+.header .innerHeader .headText {
+    font-family: 'Original Surfer', cursive;
+    color: #191516;
+    font-size: 35px;
+}
+
+.header .innerHeader:nth-child(2) {
+    grid-row-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAD8D6;
+}
+
+.header .innerHeader:nth-child(2) .text {
+    color: #191516;
+    font-size: 65px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Original Surfer', cursive;
+    text-align: center;
+}
+
+.header .innerHeader:nth-child(3) {
+    display: grid;
+    grid-template-columns: 20% 75%;
+}
+
+.header .innerHeader:nth-child(3) .about {
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #FAD8D6;
+    background-color: #191516;
+    border-right: 10px solid #FAD8D6;
+}
+
+.header .innerHeader:nth-child(3) .aboutContent {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAD8D6;
+}
+
+.header .innerHeader:nth-child(3) .aboutContent .text {
+    margin: 10%;
+    word-spacing: 5px;
+    line-height: 30px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.content {
+    background-color: #191516;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    overflow: hidden;
+}
+
+.content .backImg {
+    background-image: url("RunningMan2.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    filter: invert(94%) sepia(4%) saturate(965%) hue-rotate(329deg) brightness(104%) contrast(87%);
+    background-size: cover;
+}
+
+.content .inner_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #191516;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+    background: #DA667B;
+    box-shadow: inset 20px -20px 60px #b95769,
+        inset -20px 20px 60px #fb758d;
+
+    transition: background 0.1s ease-out;
+}
+
+.content .inner_content:hover {
+    cursor: pointer;
+    background: #FAD8D6;
+    box-shadow: none;
+}
