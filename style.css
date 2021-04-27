@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Original+Surfer&family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
 
 html {
     margin: 0;
@@ -27,7 +28,7 @@ body {
     overflow: hidden;
     height: 100%;
     display: grid;
-    grid-template-rows: 20% 50% 30%;
+    grid-template-rows: 10% 60% 30%;
     background-color: #191516;
 }
 
@@ -40,9 +41,9 @@ body {
 }
 
 .header .innerHeader .headText {
-    font-family: 'Original Surfer', cursive;
+    font-family: 'Dokdo', cursive;
     color: #191516;
-    font-size: 35px;
+    font-size: 60px;
 }
 
 .header .innerHeader:nth-child(2) {
@@ -64,9 +65,11 @@ body {
 .header .innerHeader:nth-child(3) {
     display: grid;
     grid-template-columns: 20% 75%;
+    grid-template-rows: 70% 30%;
 }
 
 .header .innerHeader:nth-child(3) .about {
+    grid-row-start: 1;
     grid-column-start: 1;
     display: flex;
     justify-content: center;
@@ -77,6 +80,21 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     color: #FAD8D6;
     background-color: #191516;
+    border-right: 10px solid #FAD8D6;
+}
+
+.header .innerHeader:nth-child(3) .contact {
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #FAD8D6;
+    background-color: #191516;
+    border-top: 10px solid #191516;
     border-right: 10px solid #FAD8D6;
 }
 
@@ -99,6 +117,23 @@ body {
     font-family: 'Amatic SC', cursive;
     font-family: 'Original Surfer', cursive;
     font-family: 'Ubuntu Mono', monospace;
+}
+
+.header .innerHeader:nth-child(3) .contactContent {
+    word-spacing: 5px;
+    line-height: 30px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #FAD8D6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .content {
